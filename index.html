@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Operaciones con Conjuntos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Operaciones con Conjuntos</h1>
+
+    <div class="menu">
+      <h2>Menú</h2>
+      <select id="selectSet">
+        <option value="A">Conjunto A</option>
+        <option value="B">Conjunto B</option>
+      </select>
+      <select id="selectAnimal">
+        <option value="">Seleccionar un animal</option>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="pez">Pez</option>
+        <option value="vaca">Vaca</option>
+        <option value="camello">Camello</option>
+        <option value="tigre">Tigre</option>
+        <option value="foca">Foca</option>
+        <option value="gallina">Gallina</option>
+        <option value="sapo">Sapo</option>
+        <option value="pato">Pato</option>
+      </select>
+      <button id="addAnimalButton">Agregar</button>
+      <button id="clearButton">Limpiar</button>
+    </div>
+
+    <div class="sets">
+      <div class="set" id="setA" draggable="true">
+        <h2>Conjunto A</h2>
+        <div id="displayA"></div>
+      </div>
+      <div class="set" id="setB" draggable="true">
+        <h2>Conjunto B</h2>
+        <div id="displayB"></div>
+      </div>
+    </div>
+
+    <div class="results">
+      <h2>Menú de Operaciones</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Función</th>
+            <th>Resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A ∪ B (Unión)</td>
+            <td id="unionResult"></td>
+          </tr>
+          <tr>
+            <td>A ∩ B (Intersección)</td>
+            <td id="intersectionResult"></td>
+          </tr>
+          <tr>
+            <td>A - B (Diferencia)</td>
+            <td id="differenceABResult"></td>
+          </tr>
+          <tr>
+            <td>B - A (Diferencia)</td>
+            <td id="differenceBAResult"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
